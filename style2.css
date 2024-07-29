@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #4cc9f0;
+}
+nav {
+    padding: 10px;
+    width: 90%;
+    margin-inline: auto;
+    border: 0.5px solid #ffcad4;
+    border-radius: 20px;
+    background-color: #ffcad4;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav :is(a:hover, a:focus) {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+label, input, textarea, button {
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.contact-info, .map, .social-media, .business-hours, .faq {
+    margin-top: 20px;
+}
