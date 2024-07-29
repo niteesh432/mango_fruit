@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niteesh">
+    <meta name="description" content="This is a website to buy a mangoes in different websites">
+    <link rel="icon" href="images/mango.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="two"><a href="buy.html">To Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+        
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>Address: 123 Example Street, City, Country</p>
+            </div>
+        
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/yourpage">Facebook</a>
+                <a href="https://www.twitter.com/yourprofile">Twitter</a>
+                <a href="https://www.instagram.com/yourprofile">Instagram</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
