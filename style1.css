@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 400vh;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("home_back2\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+nav {
+    padding: 10px;
+    width: 90%;
+    margin-inline: auto;
+    border: 0.5px solid #ffcad4;
+    border-radius: 20px;
+    background-color: #ffcad4;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav :is(a:hover, a:focus) {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+h1 {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    z-index: 1;
+    margin: 30px auto 10px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-bottom: 100px;
+    color: crimson;
+    font-size: 4.5rem;
+    font-family: "Baskervville SC" , serif;
+}
+header h1 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    border-radius: 20px;
+}
+header h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    border-radius: 20px;
+}
+
+header h1 span {
+    position: relative;
+    z-index: 2;
+}
+header h1 p {
+    font-size: 1.2rem;
+    z-index: 0;
+    color: whitesmoke;
+}
+main .part1 {
+    position: relative;
+    width: 80%;
+    height: auto;
+    z-index: 1;
+    margin: 70px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("img/mango_back1.jpeg");
+}
+.nowrap {
+    break-inside: avoid;
+    break-before: column;
+}
+#heading1 {
+    margin: 5px 10px 5px 5px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: rgba(179, 255, 0, 0.852);
+}
+#heading2 {
+    text-align: left;
+    margin: 10px 5px 5px 5px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: rgba(179, 255, 0, 0.852);
+}
+main #history p {
+    font-size: 1.2rem;
+    display: block;
+    padding: 15px;
+    text-align: justify;
+    text-indent: 10px;
+    font-weight: 500;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+}
+#history p::first-letter {
+    padding-left: 50px;
+}
+#mango-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+}
+#history::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    border-radius: 20px;
+}
+
+main .part2 {
+    position: relative;
+    width: 80%;
+    margin: 70px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+    overflow: hidden;
+} 
+#image1, #image2, #image3, #image4, #image5, #image6{
+    width: 250px; 
+    max-width: 400px; 
+    margin-right: 20px;
+    margin-left: 10px; 
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+#image1 {
+    float: left;
+}
+#image2 {
+    float: right;
+    padding-left: 10px;
+}
+#image3 {
+    float: left;
+    padding-left: 10px;
+}
+#image4 {
+    float: right;
+    padding-left: 10px;
+}
+#image5 {
+    float: left;
+    padding-left: 10px;
+}
+#image6 {
+    float: right;
+    padding-left: 10px;
+}
+
+#type1, #type2, #type3, #type4, #type5, #type6{
+    font-size: 1.2rem;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: 500;
+    font-family: "PT Serif", serif;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    background-color: #e9edc9;
+    border-radius: 20px;
+    margin: 20px 0;
+    clear: both;
+}
+#mango-background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#types::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+main .part3 {
+    position: relative;
+    width: 80%;
+    margin: 70px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+#heading3, #heading4, #heading5, #heading6, #heading7 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 10px 5px 5px 5px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: rgba(179, 255, 0, 0.852);
+}
+#nutrition p, #health p, #cultivation p, #recipes p, #conclusion p {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 500;
+    font-family: "PT Serif", serif;
+    padding: 10px;
+    color: whitesmoke;
+}
+#nutrition-benefits li, #health li {
+    list-style-type: lower-roman;
+    list-style-position: inside;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+#mango-background3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#benefits::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+strong {
+    color: rgba(4, 237, 245,0.9);
+}
+main .part4 {
+    position: relative;
+    width: 80%;
+    margin: 70px auto 20px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#recipes {
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    row-gap: 1.3rem;
+    column-gap: 1.3rem;
+    margin: 0;
+    padding: 0;
+    
+}
+#img1, #img2,#img3, #img4, #img5, #img6, #img7, #img8 {
+    object-fit: cover;
+    position: relative;
+    width: 275px; 
+    height: 300px; 
+    margin-right: 20px;
+    margin-left: 10px; 
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+figcaption {
+    width: 275px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #023047;
+    padding: 15px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+#mango-background8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#recipes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+footer .part5 {
+    position: relative;
+    width: 80%;
+    margin: 70px auto 20px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: justify;
+    overflow: hidden;
+}
+#mango-background10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#conclusion::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+button {
+    float: right;
+    color: black;
+    margin: 15px;
+    background-color: #ffc8dd;
+    border: 5px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+button a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+button img {
+    width: 40px;
+    height: 40px;
+}
